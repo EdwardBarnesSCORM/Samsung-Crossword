@@ -162,11 +162,12 @@ function initializeCP()
 		
 </script>
 <noscript style="text-align:center;font-size:24px;">Enable Javascript support in the browser.</noscript>
+
 <script>
   // Reload once to fix Chrome's viewport bug on mobile devices
   window.addEventListener('load', function () {
     const isAndroidChrome = /Chrome/.test(navigator.userAgent) && /Android/.test(navigator.userAgent);
-    
+
     if (isAndroidChrome) {
       setTimeout(function () {
         if (!sessionStorage.getItem('reloaded')) {
